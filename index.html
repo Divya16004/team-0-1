@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WasteWise - AI Waste Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>WasteWise</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recycle.html">Recycling Centers</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <h2>Upload Waste Image for Classification</h2>
+        <input type="file" id="upload" accept="image/*">
+        <button onclick="classifyWaste()">Classify</button>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

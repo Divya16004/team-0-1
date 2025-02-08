@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Recycling Centers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>WasteWise</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recycle.html">Recycling Centers</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Find Nearby Recycling Centers</h2>
+        <input type="text" id="locationInput" placeholder="Enter location">
+        <button onclick="findRecyclingCenters()">Search</button>
+        <div id="map"></div>
+        <ul id="centersList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap"></script>
+</body>
+</html>
